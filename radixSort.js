@@ -45,8 +45,6 @@ const countSort = (arr, len, exp) => {
   for (let i = 0; i < len; i++) {
     bucket[Math.floor(arr[i] / exp) % 10]++;
   }
-
-  console.log('buckets first pass-->', bucket)
   
   // Change count array to indicate the proper index for each element
   for (let i = 1; i < 10; i++) {
