@@ -52,8 +52,6 @@ const countSort = (arr, len, exp) => {
   for (let i = 1; i < 10; i++) {
     bucket[i] += bucket[i - 1];
   }
-  
-  console.log('buckets second pass-->', bucket)
 
 
   // Construct output
@@ -61,8 +59,6 @@ const countSort = (arr, len, exp) => {
     output[bucket[Math.floor(arr[i] / exp) % 10] - 1] = arr[i];
     bucket[Math.floor(arr[i] / exp) % 10]--;
   }
-
-  console.log('output -->', output)
 
   // Optional, return output if we want to maintain a pure function
   //  Instead, we are mutating the input array directly
