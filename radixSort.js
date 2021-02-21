@@ -14,15 +14,15 @@ const array = [ 4, 54, 59, 36, 68, 37, 7, 31, 57, 91 ]
  */
 
 /* Time and Space analysis
- * d => largest number of digits in input
- * b => base for representing numbers (10 for decimal in this case)
+ * d => largest number of digits in input (constant)
+ * b => base for representing numbers (10 for decimal in this case) (constant)
  * n => size of input array
  * k => maximum possible value in input
  *
- * Time Complexity:  O(d(n +b))
- * Space Complexity: O(d(n +b))
+ * Time Complexity:  O(d(n + b))
+ * Space Complexity: O(d(n + b))
  *
- * Best case:
+ * Conditions:
  *   Limit k to k <= n^c where c is a constant and set b = n
  *   Time:  O(n)
  *   Space: O(n)
